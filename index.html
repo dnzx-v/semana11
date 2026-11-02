@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff1f5">
+    <title>Mi página multilingüe</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <main class="page">
+        <section class="card" aria-labelledby="page-title">
+            <label for="language-select">Elige un idioma</label>
+            <div class="language-picker">
+                <select id="language-select" name="language" aria-label="Selecciona un idioma">
+                    <option value="en-PE">Español (Perú)</option>
+                    <option value="en-US">English (United States)</option>
+                    <option value="fr-FR">Français (France)</option>
+                </select>
+            </div>
+            <div class="content" aria-live="polite">
+                <h1 id="page-title"></h1>
+                <p id="page-description"></p>
+                <button id="login-button" type="button"></button>
+            </div>
+        </section>
+        <p id="load-error" role="alert" hidden></p>
+    </main>
+</body>
+</html>
